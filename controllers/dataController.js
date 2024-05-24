@@ -25,7 +25,6 @@ exports.uploadCSV = (req, res) => {
             res.send('CSV file data has been stored in the database');
         });
 };
-
 // Get balance at a given timestamp
 exports.getBalance = async (req, res) => {
     const { timestamp } = req.body;
@@ -41,3 +40,4 @@ exports.getBalance = async (req, res) => {
 
     res.json(balance);
 };
+
